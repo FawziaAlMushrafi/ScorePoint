@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.ScorePointFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/img_score"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/score"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:id="@+id/score_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.228" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="60sp"
+            android:text="+1"
+            android:textColor="@color/black"
+            android:background="@drawable/score"
+            android:textSize="30sp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/add_one_point"
+            app:layout_constraintTop_toBottomOf="@+id/score_textview"
+            app:layout_constraintStart_toStartOf="@+id/score_textview"
+            app:layout_constraintEnd_toEndOf="@+id/score_textview"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="60sp"
+            android:id="@+id/sub_two_point"
+            android:text="-2"
+            android:textColor="@color/black"
+            android:background="@drawable/round_btn"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/add_one_point"
+            app:layout_constraintStart_toStartOf="@+id/add_one_point"
+            app:layout_constraintEnd_toEndOf="@+id/add_one_point"
+            android:textSize="30sp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="60sp"
+            android:id="@+id/add_four_point"
+            android:text="+4"
+            android:textColor="@color/black"
+            android:background="@drawable/round_btn"
+            android:layout_marginTop="16dp"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@+id/sub_two_point"
+            app:layout_constraintStart_toStartOf="@+id/sub_two_point"
+            app:layout_constraintEnd_toEndOf="@+id/sub_two_point"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/add_four_point"
+            app:layout_constraintStart_toStartOf="@+id/add_four_point"
+            app:layout_constraintEnd_toEndOf="@+id/add_four_point"
+            android:id="@+id/action"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+</FrameLayout>
